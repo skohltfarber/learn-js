@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <script>
+        var person;
+
+        person = {
+            firstName: "Jack",
+            lastName: "Smith",
+            age: 19,
+            employed: true,
+        }
+
+        console.log(person.firstName);
+        console.log(person.lastName);
+        console.log(person.age);
+        console.log(person.employed);
+    </script>
+</head>
+
+<body>
+    <h1>Exercise 8 - Objects</h1>
+    <p>You must define an object called person with the following members:
+        <ol>
+            <li>The member firstName of the person is "Jack".</li>
+            <li>The member lastName of the person is "Smith".</li>
+            <li>The member age of the person is 19.</li>
+            <li>The member employed of the person is true.</li>
+        </ol>
+    </p>
+    <h2>Notes:</h2>
+    <p>
+        JavaScript is a functional language, and for object oriented programming it uses both objects and functions, but objects are usually used as a data structure, similar to a dictionary in Python or a map in Java. In this tutorial, we will learn how to use
+        objects as a data structure. The advanced tutorials explain more about object oriented JavaScript.
+    </p>
+    <p>Iterating over members of a dictionary is not a trivial task, since iterating over objects can also yield members who don't actually belong to an object. Therefore, we must use the hasOwnProperty method to check that the member in fact belongs to
+        the object.
+    </p>
+    <h3>Code:</h3>
+    <pre><code>
+        var person;
+
+        person = {
+            firstName: "Jack",
+            lastName: "Smith",
+            age: 19,
+            employed: true,
+        }
+
+        console.log(person.firstName);
+        console.log(person.lastName);
+        console.log(person.age);
+        console.log(person.employed);
+    </code></pre>
+</body>
+
+</html>

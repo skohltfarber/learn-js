@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Context</title>
+    <script>
+        var person = {
+            firstName: "John",
+            lastName: "Smith",
+            age: 23
+        };
+
+        function printFullName() {
+            console.log(this.firstName + " " + this.lastName);
+        }
+
+        function printDetails() {
+            console.log(this.firstName + " is " + this.age + " years old");
+        }
+
+        var boundPrintFullName;
+        var boundPrintDetails;
+
+        var boundPrintFullName = function() {
+            printFullName.call(person);
+        }
+
+        var boundPrintDetails = function() {
+            printDetails.call(person);
+        }
+
+        boundPrintFullName();
+        boundPrintDetails();
+    </script>
+</head>
+
+<body>
+    <h1>Exercise 13 - Function Context</h1>
+    <p>
+        Create bound copies of printFullName and printDetails to person called boundPrintFullName and boundPrintDetails.
+    </p>
+    <h2>Notes:</h2>
+    <p>Functions in JavaScript run in a specific context, and using the this variable we have access to it.</p>
+    <p>
+        All standard functions in the browser run under the Window context. Functions defined under an object or a class (another function) will use the context of the object it was created in. However, we can also change the context of a function at runtime,
+        either before or while executing the function. </p>
+    <h3>Code:</h3>
+    <pre><code>
+        var person = {
+            firstName: "John",
+            lastName: "Smith",
+            age: 23
+        };
+
+        function printFullName() {
+            console.log(this.firstName + " " + this.lastName);
+        }
+
+        function printDetails() {
+            console.log(this.firstName + " is " + this.age + " years old");
+        }
+
+        var boundPrintFullName;
+        var boundPrintDetails;
+
+        var boundPrintFullName = function() {
+            printFullName.call(person);
+        }
+
+        var boundPrintDetails = function() {
+            printDetails.call(person);
+        }
+
+        boundPrintFullName();
+        boundPrintDetails();
+    </code></pre>
+</body>
+
+</html>

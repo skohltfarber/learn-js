@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions</title>
+    <script>
+        function checkNumber(myNumber) {
+            if (myNumber == 42) {
+                console.log("correct");
+            } else {
+                console.log("incorrect");
+            }
+        }
+
+        checkNumber(3);
+        checkNumber(7);
+        checkNumber(42);
+    </script>
+</head>
+
+<body>
+    <h1>Exercise 6 - Conditions</h1>
+    <p>In this exercise, you must construct an if inside the checkNumber function statement that checks if the number myNumber is equal to 42. If that is the case, the function must print out using console.log the word correct. If myNumber is not equal to
+        42, the function must print out using console.log the word incorrect. You can name the argument passed to a function by supplying the name inside the parentheses. For example, function myFunction(myArgument).
+    </p>
+    <h2>Notes:</h2>
+    <p>
+        To evaluate whether two variables are equal, the == operator is used. There is also another equality operator in JavaScript, ===, which does a strict comparison. This means that it will be true only if the two things you are comparing are the same type
+        as well as same content.
+    </p>
+    <p>Two or more expressions can be evaluated together using logical operators to check if two expressions evaluate to true together, or at least one of them. To check if two expressions both evaluate to true, use the AND operator &&. To check if at least
+        one of the expressions evaluate to true, use the OR operator ||.</p>
+    <p>The NOT operator ! can also be used likewise:</p>
+    <h3>Code:</h3>
+    <pre><code>
+        function checkNumber(myNumber) {
+            if (myNumber == 42) {
+                console.log("correct");
+            } else {
+                console.log("incorrect");
+            }
+        }
+
+        checkNumber(3);
+        checkNumber(7);
+        checkNumber(42);
+    </code></pre>
+</body>
+
+</html>

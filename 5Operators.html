@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+    <script>
+        var firstName = "John";
+        var lastName = "Smith";
+        var myNumber = 21;
+
+        var fullName = null;
+        var meaningOfLife = null;
+        fullName = firstName + " " + lastName;
+        meaningOfLife = myNumber * 2;
+
+        console.log("The name is " + fullName);
+        console.log("The meaning of life is " + meaningOfLife);
+    </script>
+</head>
+
+<body>
+    <h1>Exercise 5 - Operators</h1>
+    <p>In this exercise, you do the following:
+        <ol>
+            <li>Connect the firstName and lastName to construct the variable fullName, but with a space (" ") in between the first and last name.</li>
+            <li>Multiply the variable myNumber by 2 and put the result in meaningOfLife.</li>
+        </ol>
+    </p>
+    <h2>Notes:</h2>
+    <p>JavaScript also supports combined assignment and operation operators. So, instead of typing <code>myNumber = myNumber / 2</code>, you can type <code>myNumber /= 2</code>. Here is a list of all these operators:</p>
+    <ul>
+        <li><code>/=</code></li>
+        <li><code>*=</code></li>
+        <li><code>-=</code></li>
+        <li><code>+=</code></li>
+        <li><code>%=</code></li>
+    </ul>
+    <p>JavaScript also has a <code>Math</code> module which contains more advanced functions:</p>
+    <ul>
+        <li><code>Math.abs</code> calculates the absolute value of a number</li>
+        <li><code>Math.exp</code> calculates <strong>e</strong> to the power of a number</li>
+        <li><code>Math.pow(x,y)</code> calculates the result of <strong>x</strong> to the power of <strong>y</strong></li>
+        <li><code>Math.floor</code> removes the fraction part from a number</li>
+        <li><code>Math.random()</code> will give a random number <code>x</code> where 0&lt;=x&lt;1</li>
+    </ul>
+    <p>And many more mathematical functions.</p>
+    <h3>Code:</h3>
+    <pre><code>
+        var firstName = "John";
+        var lastName = "Smith";
+        var myNumber = 21;
+
+        var fullName = null;
+        var meaningOfLife = null;
+        fullName = firstName + " " + lastName;
+        meaningOfLife = myNumber * 2;
+
+        console.log("The name is " + fullName);
+        console.log("The meaning of life is " + meaningOfLife);
+    </code></pre>
+</body>
+
+</html>

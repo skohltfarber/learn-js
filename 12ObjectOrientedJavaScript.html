@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Oriented JavaScript</title>
+    <script>
+        function Person(name, age) {
+
+            this.name = name;
+            this.age = age;
+
+            this.describe = function() {
+                return this.name + ", " + this.age + " years old";
+            }
+        }
+
+        var jack = new Person("Jack", 25);
+        var jill = new Person("Jill", 24);
+        console.log(jack.describe());
+        console.log(jill.describe());
+    </script>
+</head>
+
+<body>
+    <h1>Exercise 12 - Object Oriented JavaScript</h1>
+    <p>
+        Create a class called Person which accepts the name of a person as a string, and his/her age as a number. The Person class should have a method called describe which returns a string with the following syntax: "name, age years old". So for example, if
+        John is 19 years old then the function describe of his object will return "John, 19 years old".
+    </p>
+    <h2>Notes:</h2>
+    <p>
+        Creating an object using the new keyword is the same as writing the following code:
+    </p>
+    <p>
+        The difference between the two methods of creating objects is that the first method uses a class to define the object and then the new keyword to instantiate it, and the second method immediately creates an instance of the object.
+    </p>
+    <h3>Code:</h3>
+    <pre><code>
+        function Person(name, age) {
+
+            this.name = name;
+            this.age = age;
+
+            this.describe = function() {
+                return this.name + ", " + this.age + " years old";
+            }
+        }
+
+        var jack = new Person("Jack", 25);
+        var jill = new Person("Jill", 24);
+        console.log(jack.describe());
+        console.log(jill.describe());
+    </code></pre>
+</body>
+
+</html>

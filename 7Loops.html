@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions</title>
+    <script>
+        var myArray = ["What is the meaning of life?", "The meaning of life is", 42];
+
+        for (var i = 0; i < myArray.length; i++) {
+            console.log(myArray[i]);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Exercise 7 - Loops</h1>
+    <p>In this exercise, you must write a for loop that iterates on the myArray variable and prints out all of its members.
+    </p>
+    <h2>Notes:</h2>
+    <p>The <code>for</code> statement in JavaScript has the same syntax as in Java and C. It has three parts:</p>
+    <ol>
+        <li><strong>Initialization</strong> - Initializes the iterator variable <code>i</code>. In this example, we initialize <code>i</code> to 0.</li>
+        <li><strong>Condition</strong> - As long as the condition is met, the loop continues to execute. In this example, we check that <code>i</code> is less than 3.</li>
+        <li><strong>Increment</strong> - A directive which increments the iterator. In our case, we increment it by 1 on every loop.</li>
+    </ol>
+    <p>We can also write a shorter notation for the statement by inserting the variable definition inside the <code>for</code> loop and incrementing using the <code>++</code> operator.</p>
+    <p>The <code>while</code> statement is a more simple version of the <code>for</code> statement which checks if an expression evaluates to <code>true</code> and runs as long as it says <code>true</code>.</p>
+
+    <h3>Code:</h3>
+    <pre><code>
+        var myArray = ["What is the meaning of life?", "The meaning of life is", 42];
+
+        for (var i = 0; i < myArray.length; i++) {
+            console.log(myArray[i]);
+        }
+    </code></pre>
+</body>
+
+</html>
